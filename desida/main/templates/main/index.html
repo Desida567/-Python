@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/mmm.png' %}" alt="LoGo">
+        <span class='logo'>Itdesida</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fab fa-tumblr"></i>Про нас</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="fas fa-paper-plane"></i>Новости</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>Добавить</a>
+            <meta name="viewport" content="width=900">
+        </ul>
+    </aside>
+    <ul2>
+        <div class="features">
+            <h1>Главная страница</h1>
+        </div>    
+    </ul2>
+    <ul3>
+        <div class="features">
+            <h5>ITDesida - это платформа для общения, на которой каждый может найти что-то нужное.</h5>
+            <h5>Я создал его для общего пользования, но с определенными ограничениями. Вы можете смело пользоваться всеми возможностями данной платформы не забывая про правила.</h5>
+        </div>
+        <ul class="features">
+            <il>Эта платформа сделана для тех кто хочет быть анонимным.</il>
+            <li>Не платить за услуги, потому-что платформа полностью беспллатная.</li>
+        </ul>
+    </ul3>
+</body>
+</html>
